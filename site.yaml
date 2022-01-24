@@ -1,0 +1,15 @@
+url: Null
+land_name: Morning Dove Farm
+title: Morning Dove Farm
+description: Stories of a simple life close to nature
+name: Morning Dove Farm
+headline: Do more with less # this is lame find something better
+author: Owen Stranathan & Shanna Shu
+email: none@nowhereyet.com
+instagram: https://www.instagram.com/a_simple.life/
+copy-paths:
+ - "css/"
+ - "img/"
+ - "js/"
+ignore-patterns:
+ - "*.swp"

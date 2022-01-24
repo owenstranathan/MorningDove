@@ -1,0 +1,30 @@
+
+<head>
+    <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!--SEO -->
+    {% set title = page_title ~ " - "  ~ site.title %}
+    <title>{{title}}</title>
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:description" content="{{site.description}}" />
+    <meta property="og:url" content="{{site.url}}" />
+    <meta property="og:site_name" content="{{ site.name}}" />
+    <meta property="og:type" content="website" />
+    <script type="application/ld+json">
+        {
+            "name": "{{site.name}}",
+            "description": "{{site.description}}",
+            "@type": "WebSite",
+            "url": "{{site.url}}",
+            "headline": "{{site.headline}}",
+            "@context": "http://schema.org"
+        }
+    </script>
+
+    <!-- styles -->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/img/logo.ico">
+    <script src="/js/sideNav.js"></script>
+</head>
