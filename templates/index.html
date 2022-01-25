@@ -6,11 +6,13 @@
 {% include "includes/header.html" %}
 
 <body>
-    <div class="heading">
     {% include "includes/nav.html" %}
+    <div class="parallax" id="hero-one">
+        <h1 id="title-header">Morning Dove Farm</h1>
+        <span id="down-arrow">&#9661;</span>
     </div>
-    <div class="parallax" id="hero-one"></div>
-    <div class="about">
+    <div class="about" id="about1">
+        <h2 class="title">Welcome!</h2>
         <p>
             Smog, traffic, filth, and crowds.</br>
             Industialized synthetic foods, a dearth of trees, a general sense of stress, and a lack of community.</br>
@@ -23,5 +25,18 @@
         </p>
     </div>
     <div class="parallax" id="hero-two"></div>
+    <div class="about" id="about2">
+        <h2 class="title">More info</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <script type="text/javascript">
+		$("#title-header").fitText(0.75);
+		$("#down-arrow").fitText(0.5);
+    </script>
 </body>
 </html>

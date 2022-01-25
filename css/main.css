@@ -1,7 +1,9 @@
 :root {
     --main-bg-color: #f0eee5;
     --main-bg-color-darker:  #e3dfce;
+    --main-fg-color: black;
     --main-font-family: 'Open Sans';
+    --title-font-family: Rye;
 }
 html, body {
     background-color: var(--main-bg-color);
@@ -17,17 +19,13 @@ a:hover
 a, a:visited, a:active {
   color: inherit;
 }
-.heading
-{
-    width:100%;
-    background-color: var(--main-bg-color);
-}
+
 #nav-button{
     position: fixed;
     top:1vw;
     right: 1vw;
     margin-right:1vw;
-    font-size:30px;
+    font-size:2vw;
     cursor:pointer;
     background: var(--main-bg-color);
     border-radius: 50%;
@@ -37,7 +35,6 @@ a, a:visited, a:active {
 }
 .side-nav {
     display: block;
-    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -47,6 +44,7 @@ a, a:visited, a:active {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    padding-bottom: 60px;
     font-family: var(--main-font-family);
 }
 .side-nav a
@@ -63,8 +61,34 @@ a, a:visited, a:active {
       right: 1vw;
       font-size: 30px;
 }
-
+.title
+{
+    font-family: var(--title-font-family);
+    text-align: center;
+}
+#title-header {
+    font-family: var(--title-font-family);
+    height: 100%;
+    width: 100%;
+    grid-column: 6 / span 4;
+    grid-row: 6 / span 5;
+    margin:0;
+    padding:0;
+    color: var(--main-bg-color);
+    /*-webkit-text-stroke: 1px var(--main-fg-color);*/
+}
+#down-arrow {
+    text-align:center;
+    color: var(--main-bg-color);
+    height:100%;
+    width:100%;
+    grid-column: 5 / span 2;
+    grid-row: 10;
+}
 .parallax {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     height: 100%;
     width: 100%;
     margin:0;
